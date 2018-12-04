@@ -26,7 +26,7 @@ var room = 'foo';
 // Could prompt for room name:
 room = prompt('Enter room name:');
 
-var socket = io('http://localhost:8080');
+var socket = io('https://tranquil-coast-32246.herokuapp.com');
 
 if (room !== '') {
   socket.emit('create or join', room);
